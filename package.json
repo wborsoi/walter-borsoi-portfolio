@@ -1,0 +1,26 @@
+{
+  "name": "walter-borsoi-portfolio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "purge-css": "purgecss --css css/main.css --content index.html -o css/reducido.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wborsoi/walter-borsoi-portfolio2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wborsoi/walter-borsoi-portfolio2/issues"
+  },
+  "homepage": "https://github.com/wborsoi/walter-borsoi-portfolio2#readme"
+}
