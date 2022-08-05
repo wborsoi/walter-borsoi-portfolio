@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if ($(this).scrollTop() > $("#Bienvenida").height()){  
+    if ($(this).scrollTop() > ($("#Bienvenida").height() - $("#presentacion").height())){  
         $('#WBHeader').addClass("header__minified");
     }
     else{

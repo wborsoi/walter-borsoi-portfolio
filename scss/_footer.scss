@@ -3,10 +3,12 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 0 5px;
+    z-index: 90;
 
     .navbar {
         background-color: $color_dark;
         border-radius: 10px 10px 0 0;
+        @include box-shadow();
 
         * {
             color: $color_white;
@@ -19,7 +21,8 @@ footer {
             object-position: center;
         }
 
-        .nav-link:hover, .nav-link:focus {
+        .nav-link:hover,
+        .nav-link:focus {
             color: $color_yellow;
         }
 
@@ -42,7 +45,7 @@ footer {
         }
 
         svg {
-            transition: all 0.5s; 
+            transition: all 0.5s;
         }
     }
 
