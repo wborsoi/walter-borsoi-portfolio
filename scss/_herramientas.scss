@@ -4,4 +4,84 @@
     background-size: cover;
     background-position: bottom center;
     background-repeat: repeat;
+    padding: 6em 1em 2em 1em;
+
+
+    .header {
+        margin: 1em 0;
+        text-align: center;
+        font-size: $font_size_xl;
+    }
+
+    article {
+        h3 {
+            font-size: $font_size_l;
+            text-align: right;
+            background-color: $color_dark;
+            color: $color_white;
+            border-radius: 10px;
+            padding: 0.5em;
+            @include box-shadow();
+        }
+    }
+
+    .tool-list {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        .tool-item {
+            @include box-shadow();
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 10em;
+            height: 10em;
+            padding: 1em;
+            margin: 1em;
+            background-color: $color_yellow;
+            border-radius: 100%;
+            transition: all 0.3s;
+
+            img {
+                display: inline-block;
+                height: 5em;
+                text-align: center;
+            }
+
+            span {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: $font_size_m - 0.2rem;
+            }
+
+            &:hover {
+                transition: transform 0.2s;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #Herramientas {
+        article {
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .tool-list {
+            justify-content: center;
+        }
+
+        .tool-item {
+            justify-content: center;
+        }
+    }
 }

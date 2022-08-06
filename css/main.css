@@ -8642,6 +8642,8 @@ footer {
       height: 2em;
       object-fit: cover;
       object-position: center; }
+    footer .navbar .nav-link span:hover, footer .navbar .nav-link span:focus {
+      color: #FFD369; }
     footer .navbar .nav-link:hover,
     footer .navbar .nav-link:focus {
       color: #FFD369; }
@@ -8731,7 +8733,8 @@ footer {
     background-color: #EEEEEE;
     top: 0;
     bottom: 0;
-    left: 50%; }
+    left: 50%;
+    border-radius: 10px; }
   #Experiencia .timeline__container {
     padding: 10px 40px;
     position: relative;
@@ -8799,7 +8802,62 @@ footer {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23fca075' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23d67d87' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%239a6887' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%235e566f' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23393E46' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   background-position: bottom center;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  padding: 6em 1em 2em 1em; }
+  #Herramientas .header {
+    margin: 1em 0;
+    text-align: center;
+    font-size: 2.5rem; }
+  #Herramientas article h3, #Herramientas article .h3 {
+    font-size: 2rem;
+    text-align: right;
+    background-color: #393E46;
+    color: #EEEEEE;
+    border-radius: 10px;
+    padding: 0.5em;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  #Herramientas .tool-list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start; }
+    #Herramientas .tool-list .tool-item {
+      -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 10em;
+      height: 10em;
+      padding: 1em;
+      margin: 1em;
+      background-color: #FFD369;
+      border-radius: 100%;
+      transition: all 0.3s; }
+      #Herramientas .tool-list .tool-item img {
+        display: inline-block;
+        height: 5em;
+        text-align: center; }
+      #Herramientas .tool-list .tool-item span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem; }
+      #Herramientas .tool-list .tool-item:hover {
+        transition: transform 0.2s;
+        transform: scale(1.1); }
+
+@media screen and (max-width: 992px) {
+  #Herramientas article h3, #Herramientas article .h3 {
+    text-align: center; }
+  #Herramientas .tool-list {
+    justify-content: center; }
+  #Herramientas .tool-item {
+    justify-content: center; } }
 
 #Contacto {
   background-color: #393E46;

@@ -1,6 +1,6 @@
 .black-card {
-    background-color: #393E46;
-    color: #EEEEEE;
+    background-color: $color_dark;
+    color: $color_white;
     padding: 2em;
     border-radius: 10px;
     @include box-shadow();
