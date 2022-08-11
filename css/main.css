@@ -13196,7 +13196,7 @@ footer .navbar-toggler svg {
   padding: 2em 1em;
 }
 
-#LanguageSelect article .lang_img-container {
+#LanguageSelect .lang_img-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -13204,7 +13204,7 @@ footer .navbar-toggler svg {
   align-items: center;
 }
 
-#LanguageSelect article .lang_img {
+#LanguageSelect .lang_img {
   max-width: 5em;
   margin: 0 2em;
 }

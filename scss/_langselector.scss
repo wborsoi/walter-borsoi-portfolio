@@ -8,20 +8,19 @@
     align-items: center;
     padding: 2em 1em;
 
-
-    article {
-        .lang_img-container{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        .lang_img {
-            max-width: 5em;
-            margin: 0 2em;
-        }
+    .lang_img-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
+
+    .lang_img {
+        max-width: 5em;
+        margin: 0 2em;
+    }
+
 
     h2 {
         font-size: $font_size_l;
